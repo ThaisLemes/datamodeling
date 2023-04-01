@@ -86,9 +86,9 @@ PRIMARY KEY(artist_id));
 
 time_table_create = ("""CREATE TABLE IF NOT EXISTS time ( 
 
-start_time timestamp NOT NULL,
+start_time timestamp,
 
-hour int NOT NULL,
+hour TIME NOT NULL,
 
 day int NOT NULL, 
 
@@ -98,7 +98,7 @@ month int NOT NULL,
 
 year int NOT NULL, 
 
-weekday int NOT NULL,
+weekday text,
 
 PRIMARY KEY(start_time));
 
